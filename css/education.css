@@ -1,0 +1,166 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html{
+	font-size: 16px;
+}
+
+#academic-table {
+	display: none;
+}
+.table-wrapper {
+  width: 100%;
+}
+
+.table-wrapper .table {
+  width: 100%;
+  max-width: 100%;
+}
+
+.tr-bg-color {
+	background:  #222222;
+  color: #E9E5E5;
+}
+
+
+#table-header {
+	padding-left: 30vw;
+}
+
+
+
+/* ------- Presentational Formatting --------- */
+.education-header {
+  text-align: center;
+  font-size: 1.6rem;
+}
+/*.even{
+	background: #2F2FA2; !important
+}
+.odd{
+	background: #282828;
+}*/
+
+.table {
+  border: 1px solid #f0f0f0;
+  border-collapse: collapse;
+}
+
+.table tr {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.table thead tr {
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.table td,
+.table th {
+  padding: .5em;
+}
+
+.table th {
+  text-align: left;
+}
+tbody>tr>td>p>a {
+	animation: color-animate 1s infinite ; 
+}
+
+@keyframes color-animate {
+	/*0%{color: #956EA7;}
+	25%{color: #4D2D6B;}
+	50%{color: #25143D;}
+	100%{color: #BD89EB;}*/
+	0%{font-weight: 100;}
+	15%{font-weight: 200;}
+	30%{font-weight: 300;}
+	45%{font-weight: 400;}
+	60%{font-weight: 500;}
+	75%{font-weight: 600;}
+	90%{font-weight: 700;}
+	100%{font-weight: 800;}
+}
+
+@media screen and (max-width:991px) {
+  .table {
+    margin: 0 auto;
+    width: 100%;
+    border-spacing: 0;
+  }
+  .table thead {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+  .table tbody,
+  .table tr,
+  .table th,
+  .table td {
+    display: block;
+    padding: 0;
+    text-align: left;
+    white-space: normal;
+  }
+  .table tr td,
+  .table tr th {
+    padding: 2em 1em;
+    vertical-align: middle;
+    overflow: hidden;
+    position: relative;
+    vertical-align: top;
+    border: 1px solid #EDF0F1;
+    border-top: none;
+    width: 100%;
+    white-space: normal;
+  }
+  .table th[scope="row"] {
+    width: 100%;
+    text-align: center;
+    display: block;
+    background-color: #414141;
+    margin: 0 auto;
+    padding: .5em 0;
+  }
+  .table td[data-header]:before {
+    content: attr(data-header);
+    display: block;
+    float: left;
+    width: 50%;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+  }
+  .table td[data-header] > * {
+    display: block;
+    width: 50%;
+    float: right;
+    clear: right;
+    padding-left: 1em;
+    margin-top: 0;
+  }
+  .table td[data-header]:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    border-right: 1px solid #EDF0F1;
+    padding-bottom: 200%;
+    display: block;
+  }
+
+  #table-header {
+  	padding-left: 5vw;
+  }
+
+  tbody tr th {
+    color: white;
+  }
+}
+
