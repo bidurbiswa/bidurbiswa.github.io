@@ -118,4 +118,13 @@ html {
 	#header {
 		height: 86vh;
 	}
+	#work h3 {
+		font-size: 0.9rem
+	}
+	.header h5, .header h1 {
+		padding-left: 0;
+	}
+	#display-picture-top {
+		width: 20vw;
+	}
 }
