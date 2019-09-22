@@ -95,6 +95,10 @@ html {
 	#profile-link {
 		color: #1c1c1c; !important
 	}
+
+	#header{
+		padding-left: 17vw;
+	}
 }
 
 @media screen and (max-width: 576px){
