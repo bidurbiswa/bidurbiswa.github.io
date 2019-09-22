@@ -1,5 +1,6 @@
 html {
 	height: 150vh;
+	font-size: 16px;
 	
 }
 *{
@@ -70,12 +71,12 @@ html {
 @media screen and (max-width: 768px) {
 	.header h1 {
 		font-size: 1.8rem;
-		padding-left: 30px;
+		/*padding-left: 3vw;*/
 	}
 
 	.header h5 {
 		font-size: 1rem;
-		padding-left: 40px;
+		/*padding-left: 40px;*/
 		padding-bottom: 20px;
 	}
 	#header {
@@ -88,6 +89,9 @@ html {
 		width: 40vw;
 		height: auto;
 	}
+	#display-picture-top {
+		width: 20vw;
+	}
 	#hidden-image {
 		width: 50vw;
 	}
@@ -98,6 +102,15 @@ html {
 
 	#header{
 		padding-left: 17vw;
+	}
+	#education-header {
+		font-size: 1.3rem
+	}
+	#skill h4 {
+		font-size: 0.9rem
+	}
+	#work h3 {
+		font-size: 0.9rem
 	}
 }
 
