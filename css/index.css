@@ -129,6 +129,14 @@ html {
 	#work h3 {
 		font-size: 0.9rem
 	}
+	.social-media-img {
+		width: 5vw;
+	}
+	#fb-logo {
+		width: 7vw;
+
+	}
+
 }
 
 @media screen and (max-width: 576px){
