@@ -39,3 +39,17 @@
 	color: white;
 	padding-right: 5vw;
 }
+
+#sp-exp li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 15px;
+}
+
+#sp-exp li:before {
+  content: "\25BA \0020";
+  font-size: 9px;
+  position: absolute;
+  top: 5px;
+  left: -10px;
+}

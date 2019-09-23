@@ -27,10 +27,11 @@ $(document).ready(function(){
 	
 	$(window).scroll(function(){
 		let scroll = $(window).scrollTop();
-		// console.log("aftr scroll"+scroll)
-		if(scroll > position && (position > 0 && position <=190) ){
-			$('#hidden-image').show();
-			if(scroll >= 116){
+		console.log('pos'+position)
+		console.log("aftr scroll"+scroll)
+		if(scroll > position && (position > 0 && position <=314) ){
+			// $('#hidden-image').show();
+			if(scroll >= 310){
 				// $('#header-container').addClass('card')
 				$('#hidden-image').show();
 				$('#display-picture-col').css('visibility', 'hidden');
