@@ -60,6 +60,10 @@ html {
 	display: none;
 	width: 20vw;
 }
+.footer-image {
+	padding-left: 2vw;
+}
+
 
 .text-transformer {
 	animation: bold-text 5s infinite;
