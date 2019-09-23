@@ -143,6 +143,13 @@ html {
 	#header {
 		height: 86vh;
 	}
+	.social-media-img {
+		width: 5vw;
+	}
+	#fb-logo {
+		width: 7vw;
+
+	}
 }
 
 @media screen and (max-width: 992px){
