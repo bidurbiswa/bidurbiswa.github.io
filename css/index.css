@@ -1,6 +1,7 @@
 html {
 	height: 150vh;
 	font-size: 16px;
+	 scroll-behavior: smooth;
 	
 }
 *{
@@ -39,7 +40,16 @@ html {
 	
 }
 
+.social-media-img {
+	height: 4vh;
+	width: 2vw;
+}
 
+#fb-logo {
+	height: 6vh;
+	width: 3vw;
+
+}
 
 .first-letter-big {
 	font-size: 2.5rem;
@@ -69,6 +79,9 @@ html {
 	100%{font-size: 1.9rem; font-weight: 900;} 
 }
 @media screen and (max-width: 768px) {
+	#header {
+		height: 100vh;
+	}
 	.header h1 {
 		font-size: 1.8rem;
 		/*padding-left: 3vw;*/
@@ -118,4 +131,20 @@ html {
 	#header {
 		height: 86vh;
 	}
+}
+
+@media screen and (max-width: 992px){
+	#header {
+		height: 86vh;
+		padding-left: 20vw;
+	}
+	/*	.header h1 {
+		
+		padding-left: 3vw;
+	}
+
+	.header h5 {
+		
+		padding-bottom: 20px;
+	}*/
 }

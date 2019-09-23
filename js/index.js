@@ -24,7 +24,7 @@ $(document).ready(function(){
 	
 	/*Image Scroll-fixed-top starts*/
 	let position = $(window).scrollTop();
-	// console.log("pos"+position)
+	
 	$(window).scroll(function(){
 		let scroll = $(window).scrollTop();
 		// console.log("aftr scroll"+scroll)
@@ -58,11 +58,26 @@ $(document).ready(function(){
 		position = scroll;
 
 	});
+
+	/*toggle top image on mobile devices*/
+	let navbarToggleCount =0;
+	$('.navbar-toggler').click(function(){
+		if(navbarToggleCount === 0){
+			$('#hidden-image').css('display', 'none');
+			navbarToggleCount = 1
+		}else if(navbarToggleCount === 1){
+			$('#hidden-image').show();
+			navbarToggleCount = 0
+		}else{
+
+		}
+		
+	});
 	/*Image Scroll-fixed-top end*/
+	
 
 
 	
-
    
 	/*education.html starts*/
     $('.table-wrapper').find('a').hover(function(){
