@@ -65,6 +65,12 @@ html {
 }
 
 
+#paragraph::selection {
+	color: white;
+	background: black;
+}
+
+
 
 .text-transformer {
 	animation: bold-text 5s infinite;

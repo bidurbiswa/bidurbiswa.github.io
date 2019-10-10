@@ -23,57 +23,57 @@ $(document).ready(function(){
 	},500);
 	
 	/*Image Scroll-fixed-top starts*/
-	let position = $(window).scrollTop();
+	// let position = $(window).scrollTop();
 	
-	$(window).scroll(function(){
-		let scroll = $(window).scrollTop();
-		console.log('pos'+position)
-		console.log("aftr scroll"+scroll)
-		if(scroll > position && (position > 0 && position <=314) ){
-			// $('#hidden-image').show();
-			if(scroll >= 310){
-				// $('#header-container').addClass('card')
-				$('#hidden-image').show();
-				$('#display-picture-col').css('visibility', 'hidden');
-				$('#hidden-image-container').addClass('sticky-top');
-				$('#hidden-image-container').css({
-					width: '20vw',
-					marginLeft: '7.5vw'
-				});
-				$('#hidden-image').find('img').css({
-					// width: '15vw',
-					border: '2px solid grey'
+	// $(window).scroll(function(){
+	// 	let scroll = $(window).scrollTop();
+	// 	console.log('pos'+position)
+	// 	console.log("aftr scroll"+scroll)
+	// 	if(scroll > position && (position > 0 && position <=314) ){
+	// 		// $('#hidden-image').show();
+	// 		if(scroll >= 310){
+	// 			// $('#header-container').addClass('card')
+	// 			$('#hidden-image').show();
+	// 			$('#display-picture-col').css('visibility', 'hidden');
+	// 			$('#hidden-image-container').addClass('sticky-top');
+	// 			$('#hidden-image-container').css({
+	// 				width: '20vw',
+	// 				marginLeft: '7.5vw'
+	// 			});
+	// 			$('#hidden-image').find('img').css({
+	// 				// width: '15vw',
+	// 				border: '2px solid grey'
 
-				});
-			}
+	// 			});
+	// 		}
 			
-		}else{
-			// console.log(scroll)
+	// 	}else{
+	// 		// console.log(scroll)
 
-			if(scroll< position){
-				$('#display-picture-col').css('visibility', 'visible');
-				$('#hidden-image-container').removeClass('sticky-top');
-				$('#hidden-image').css('display', 'none');
-			}
-		}
-		position = scroll;
+	// 		if(scroll< position){
+	// 			$('#display-picture-col').css('visibility', 'visible');
+	// 			$('#hidden-image-container').removeClass('sticky-top');
+	// 			$('#hidden-image').css('display', 'none');
+	// 		}
+	// 	}
+	// 	position = scroll;
 
-	});
+	// });
 
-	/*toggle top image on mobile devices*/
-	let navbarToggleCount =0;
-	$('.navbar-toggler').click(function(){
-		if(navbarToggleCount === 0){
-			$('#hidden-image').css('display', 'none');
-			navbarToggleCount = 1
-		}else if(navbarToggleCount === 1){
-			$('#hidden-image').show();
-			navbarToggleCount = 0
-		}else{
+	// /*toggle top image on mobile devices*/
+	// let navbarToggleCount =0;
+	// $('.navbar-toggler').click(function(){
+	// 	if(navbarToggleCount === 0){
+	// 		$('#hidden-image').css('display', 'none');
+	// 		navbarToggleCount = 1
+	// 	}else if(navbarToggleCount === 1){
+	// 		$('#hidden-image').show();
+	// 		navbarToggleCount = 0
+	// 	}else{
 
-		}
+	// 	}
 		
-	});
+	// });
 	/*Image Scroll-fixed-top end*/
 	
 
