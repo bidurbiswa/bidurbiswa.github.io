@@ -25,6 +25,10 @@
 	background: #222222;
 	color: white;
 }
+.bg-custom-1 {
+	background: #12343b;
+	color: white;
+}
 
 .border-blue {
 	border: 1px solid #222222;
